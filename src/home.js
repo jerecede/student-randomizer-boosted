@@ -25,7 +25,7 @@ homePageC.start();
 
 //da migliorare
 // 0) fare funzione loadstudents per struttura
-// 1) quando c'è il form precompilato riuscire a recuperare il date birthdate
+// 1) invece del input-type-date per yob, fare input-type-number
 // 2) quando c'è il form precompilato la select migliorarlo
 // 3) quando fai remove di tutti gli studenti carica automaticamente da json (lo voglio?)
 // 4) all'inizio nel localstorage crea 'starred' perche??
