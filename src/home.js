@@ -31,3 +31,4 @@ homePageC.start();
 // 4) all'inizio nel localstorage crea 'starred' perche??
 // 5) aggiungere funzione blocca coppia
 // 6) fare css
+// 7) quando da edit ritorno a home fare in modo che rimanga lo stesso display che hai lasciato (con random, byage...)

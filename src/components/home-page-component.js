@@ -15,6 +15,8 @@ export default class HomePageComponent {
             console.log('dati non trovati nello storage, adesso caricati da locale')
         }
 
+        // this.render(this.students);
+
         //events, cosa fare con i dati a seconda di come visualizzarli
 
         const btnRandom = document.getElementById('random');

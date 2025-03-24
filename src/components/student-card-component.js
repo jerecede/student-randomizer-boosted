@@ -1,4 +1,4 @@
-export default class BookCardComponent {
+export default class StudentCardComponent {
 
     constructor(student) {
         this.student = student;
@@ -24,8 +24,11 @@ export default class BookCardComponent {
             return 0;
         })());
 
-        const editContainer = this.createTextElement('a','edit');
-        editContainer.href = './editstudent.html?name=' + name + '&surname=' +surname;
+        const editContainer = this.createTextElement('button','edit');
+        editContainer.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.href = '/editstudent.html?name=' + name + '&surname=' +surname;
+        });
 
         studentContainer.appendChild(nameContainer);
         studentContainer.appendChild(countryContainer);
