@@ -28,4 +28,5 @@ homePageC.start();
 // 2) quando c'è il form precompilato la select migliorarlo
 // 3) quando fai remove di tutti gli studenti carica automaticamente da json (lo voglio?)
 // 4) all'inizio nel localstorage crea 'starred' perche??
-// 5) fare css
+// 5) aggiungere funzione blocca coppia
+// 6) fare css
