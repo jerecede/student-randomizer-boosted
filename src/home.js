@@ -22,3 +22,10 @@ const serviceStrg = new StorageService();
 const homePageC = new HomePageComponent(serviceStdn, serviceStrg);
 
 homePageC.start();
+
+//da migliorare
+// 1) quando c'è il form precompilato riuscire a recuperare il date birthdate
+// 2) quando c'è il form precompilato la select migliorarlo
+// 3) quando fai remove di tutti gli studenti carica automaticamente da json (lo voglio?)
+// 4) all'inizio nel localstorage crea 'starred' perche??
+// 5) fare css
