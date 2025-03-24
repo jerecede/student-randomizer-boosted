@@ -12,7 +12,7 @@ export default class HomePageComponent {
         if(this.students.length === 0){ 
             this.students = await this.studentService.getData();  //trova dati locali, e poi li salva
             this.storageService.save(this.students);
-            StorageService.first_time_local = false;
+            console.log('dati non trovati nello storage, adesso caricati da locale')
         }
 
         //events, cosa fare con i dati a seconda di come visualizzarli

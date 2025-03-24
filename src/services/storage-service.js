@@ -23,7 +23,7 @@ export default class StorageService {
         if (starredStudentsString) {
             const starredStudents = JSON.parse(starredStudentsString);
             starredStudents.push(student);
-            localStorage.setItem('students-starred', JSON.stringify(starredStudents));
+            this.save(starredStudents);
         }
     }
 
@@ -40,7 +40,7 @@ export default class StorageService {
 
         starredStudents = starredStudents.filter(s => s.name !== name && s.surname !== surname);
 
-        localStorage.setItem('students-starred', JSON.stringify(starredStudents));
+        this.save(starredStudents);
     }
 
     replaceStudent(newStudent, oldName, oldSurname){
@@ -51,6 +51,6 @@ export default class StorageService {
 
         starredStudents[studentIndex] = newStudent;
 
-        localStorage.setItem('students-starred', JSON.stringify(starredStudents));
+        this.save(starredStudents);
     }
 }
